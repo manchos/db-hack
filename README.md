@@ -55,7 +55,7 @@ optional arguments:
 ## Подкоманда `fix_marks` 
 правит плохие оценки, двойки или тройки на пятерки для указанного по имени (-kname) ученика.
 
-```python
+```bash
 python schoolkid_script.py fix-marks --help
 usage: schoolkid_script.py fix-marks [-h] [-kname CHILD_NAME]
 
