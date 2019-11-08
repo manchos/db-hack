@@ -11,12 +11,11 @@ class CommendationTest(TestCase):
     fixtures = ['subject.json', 'teacher.json', 'test_chastisement.json',
                 'test_schoolkid.json', 'test_lesson.json', 'test_mark.json']
 
-    schoolkid_name = 'Фролов Иван'  # 'Голубев Феофан'
+    schoolkid_name = 'Фролов Иван'
 
     schoolkid = get_schoolkid(schoolkid_name)
 
     def setUp(self):
-        # Every test needs a client.
         self.client = Client()
 
     def test_fix_mark(self):
@@ -33,7 +32,7 @@ class CommendationTest(TestCase):
         )
         fix_marks(self.schoolkid_name)
         self.assertFalse(bad_marks)
-        # obj.refresh_from_db()
+        
         response = self.client.get('/schoolkid/{}/'.format(self.schoolkid.id))
         self.assertNotContains(response,
                             '<td style="text-align:center;">2 </td>')
