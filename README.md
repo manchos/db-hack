@@ -48,7 +48,7 @@ optional arguments:
 Удаляет замечания для указанного ученика.
 
 ```bash
-python schoolkid_script.py rm-chast --help
+python schoolkid_script.py '' rm-chast --help
 usage: schoolkid_script.py rm-chast [-h]
 
 optional arguments:
@@ -60,7 +60,7 @@ optional arguments:
 Правит плохие оценки, двойки или тройки на пятерки для указанного ученика.
 
 ```bash
-python schoolkid_script.py fix-marks --help
+python schoolkid_script.py '' fix-marks --help
 usage: schoolkid_script.py fix-marks [-h]
 
 optional arguments:
