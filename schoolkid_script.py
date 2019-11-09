@@ -3,8 +3,8 @@ import os, django, random, argparse
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "project.settings")
 django.setup()
 from django.core.exceptions import ObjectDoesNotExist, MultipleObjectsReturned
-from datacenter.models import Schoolkid, Mark, Lesson, Commendation, \
-    Chastisement
+from datacenter.models import (Schoolkid, Mark, Lesson, Commendation, 
+                               Chastisement)
 
 
 def get_schoolkid(schoolkid_name):
