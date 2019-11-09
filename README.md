@@ -38,7 +38,7 @@ subcommands:
 
 ```bash
 python schoolkid_script.py '' new-comm --help
-usage: schoolkid_script.py new-comm [-h] [-lesson LESSON_NAME]
+usage: schoolkid_script.py child_name new-comm [-h] [-lesson LESSON_NAME]
                                     
 optional arguments:
   -h, --help           show this help message and exit
@@ -49,7 +49,7 @@ optional arguments:
 
 ```bash
 python schoolkid_script.py '' rm-chast --help
-usage: schoolkid_script.py rm-chast [-h]
+usage: schoolkid_script.py child_name rm-chast [-h]
 
 optional arguments:
   -h, --help         show this help message and exit
@@ -61,7 +61,7 @@ optional arguments:
 
 ```bash
 python schoolkid_script.py '' fix-marks --help
-usage: schoolkid_script.py fix-marks [-h]
+usage: schoolkid_script.py child_name fix-marks [-h]
 
 optional arguments:
   -h, --help         show this help message and exit
